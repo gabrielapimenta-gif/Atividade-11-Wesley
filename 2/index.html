@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+
+    <div class="calculadora">
+        <div class="visor" id="resultado">0</div>
+        
+        <div class="teclado">
+            <button onclick="limpar()" class="btn-util">C</button>
+            <button onclick="inverter()" class="btn-util">+-</button>
+            <button onclick="porcentagem()" class="btn-util">%</button>
+            <button onclick="inserir('/')" class="btn-op">/</button>
+
+            <button onclick="inserir('7')">7</button>
+            <button onclick="inserir('8')">8</button>
+            <button onclick="inserir('9')">9</button>
+            <button onclick="inserir('*')" class="btn-op">X</button>
+
+            <button onclick="inserir('4')">4</button>
+            <button onclick="inserir('5')">5</button>
+            <button onclick="inserir('6')">6</button>
+            <button onclick="inserir('-')" class="btn-op">-</button>
+
+            <button onclick="inserir('1')">1</button>
+            <button onclick="inserir('2')">2</button>
+            <button onclick="inserir('3')">3</button>
+            <button onclick="inserir('+')" class="btn-op">+</button>
+
+            <button onclick="inserir('0')">0</button>
+            <button onclick="inserir('.')">.</button>
+            <button onclick="calcular()" class="btn-igual">=</button>
+        </div>
+    </div>
+
+    <script src="assets/funcionalidade.js"></script>
+</body>
+</html>
